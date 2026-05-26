@@ -1,6 +1,21 @@
-name: DD-iptv-api
-tags:
-  - 工具
-title: IPTV 自动测速接口
-common: true
-description: 自动抓取全国及国内外优质 IPTV 直播源并进行测速优化的完全体工具。
+additionalProperties:
+  key: dd-iptv-api
+  name: DD IPTV API
+  tags:
+    - Media
+    - Tool
+  description:
+    en: IPTV live-source automatic update and speed test platform
+    zh: 自动抓取全国及国内外优质 IPTV 直播源并进行测速优化的工具
+    zh-Hant: 自動抓取 IPTV 直播源並進行測速優化的工具
+    ja: IPTV ライブソース自動更新および速度測定ツール
+    ms: Alat kemas kini automatik dan ujian kelajuan IPTV
+    pt-br: Ferramenta de atualização automática e teste de velocidade IPTV
+    ru: Инструмент автоматического обновления и тестирования IPTV-источников
+    ko: IPTV 라이브 소스 자동 업데이트 및 속도 테스트 도구
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  website: https://github.com/Guovin/iptv-api
+  github: https://github.com/Guovin/iptv-api
+  document: https://github.com/Guovin/iptv-api
