@@ -12,7 +12,7 @@ additionalProperties:
       type: number
 
     # 2. 公网域名或IP (对应 PUBLIC_DOMAIN)
-    - default: "${PANEL_APP_IP}" # 1Panel 默认自动获取当前树莓派的内网IP
+    - default: "127.0.0.1" # 1Panel 默认自动获取当前树莓派的内网IP
       envKey: PUBLIC_DOMAIN
       label:
         en: Public Domain / IP
