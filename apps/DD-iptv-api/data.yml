@@ -1,0 +1,6 @@
+name: DD-iptv-api
+tags:
+  - 工具
+title: IPTV 自动测速接口
+common: true
+description: 自动抓取全国及国内外优质 IPTV 直播源并进行测速优化的完全体工具。

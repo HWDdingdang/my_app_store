@@ -1,0 +1,32 @@
+version: '3'
+
+networks:
+    1panel-network:
+        external: true
+services:
+  iptv-api:
+    image: guovern/iptv-api:2.0.7
+    container_name: ${CONTAINER_NAME}-service
+    deploy:
+        resources:
+            limits:
+                cpus: ${CPUS}
+                memory: ${MEMORY_LIMIT}
+    restart: unless-stopped
+    tty: true
+    stdin_open: true
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:8080" # 左边是 1Panel 的面板端口，右边是容器固定端口
+    volumes:
+      - ./data/config:/iptv-api/config # 挂载本地配置目录
+      - ./data/output:/iptv-api/output # 挂载本地结果目录
+    environment:
+      TZ: "Asia/Shanghai"
+      PUBLIC_SCHEME: "http"
+      PUBLIC_DOMAIN: "${PUBLIC_DOMAIN}"  # 直接读取来自 data.yml 表单输入的内容
+      PUBLIC_PORT: "${PUBLIC_PORT}"      # 直接读取来自 data.yml 表单输入的内容
+      NGINX_HTTP_PORT: "8080"             # 容器内部固定为 8080，无需让用户修改
+      CDN_URL: ""
+      HTTP_PROXY: ""
+    labels:
+      createdBy: "Apps"

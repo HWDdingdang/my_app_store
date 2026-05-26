@@ -1,0 +1,32 @@
+additionalProperties:
+  formFields:
+    # 1. 服务端口 (对应 NGINX_HTTP_PORT，但在 1Panel 中我们作为宿主机映射端口)
+    - default: 8089
+      envKey: PANEL_APP_PORT_HTTP
+      label:
+        en: Service Port
+        zh: 服务端口
+        zh-Hant: 服務端口
+        ja: サービスポート
+      rule: paramPort
+      type: number
+
+    # 2. 公网域名或IP (对应 PUBLIC_DOMAIN)
+    - default: "${PANEL_APP_IP}" # 1Panel 默认自动获取当前树莓派的内网IP
+      envKey: PUBLIC_DOMAIN
+      label:
+        en: Public Domain / IP
+        zh: 公网域名或IP
+        zh-Hant: 公網域名或IP
+      rule: required
+      type: text
+
+    # 3. 公网端口 (对应 PUBLIC_PORT)
+    - default: 8089
+      envKey: PUBLIC_PORT
+      label:
+        en: Public Port
+        zh: 公网端口
+        zh-Hant: 公網端口
+      rule: paramPort
+      type: number

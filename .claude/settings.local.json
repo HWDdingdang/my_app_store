@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Directory \"F:\\\\wangkun\\\\project\\\\15_1panel\\\\my_app_store\")",
+      "Bash(Select-Object Name)"
+    ]
+  }
+}
