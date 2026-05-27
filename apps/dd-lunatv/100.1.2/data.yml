@@ -36,7 +36,7 @@ additionalProperties:
       rule: paramPort
       type: number
 
-    - default: 100.1.2
+    - default: v100.1.2
       edit: true
       envKey: IMAGE_TAG
       label:
