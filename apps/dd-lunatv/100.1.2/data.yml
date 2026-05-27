@@ -18,22 +18,22 @@ additionalProperties:
       rule: paramPort
       type: number
 
-    - default: v100.1.2
-      edit: true
-      envKey: IMAGE_TAG
-      label:
-        zh: 镜像版本
-        zh-Hant: 映像版本
-        en: Image Tag
-        ja: イメージタグ
-        ko: 이미지 태그
-        ru: Тег образа
-        fr: Tag de l'image
-        de: Image-Tag
-        es: Etiqueta de la imagen
-        pt-BR: Tag da Imagem
-      required: true
-      type: text
+    # - default: v100.1.2
+    #   edit: true
+    #   envKey: IMAGE_TAG
+    #   label:
+    #     zh: 镜像版本
+    #     zh-Hant: 映像版本
+    #     en: Image Tag
+    #     ja: イメージタグ
+    #     ko: 이미지 태그
+    #     ru: Тег образа
+    #     fr: Tag de l'image
+    #     de: Image-Tag
+    #     es: Etiqueta de la imagen
+    #     pt-BR: Tag da Imagem
+    #   required: true
+    #   type: text
 
     - default: admin
       edit: true
