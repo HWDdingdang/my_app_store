@@ -67,7 +67,16 @@ formFields:
       es: Nivel de registro
       pt-BR: Nível de Log
     required: true
-    type: text
+    type: select
+    values:
+      - label: debug
+        value: debug
+      - label: info
+        value: info
+      - label: warning
+        value: warning
+      - label: error
+        value: error
 
   - default: "false"
     edit: true
