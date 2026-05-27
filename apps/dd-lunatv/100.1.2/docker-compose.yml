@@ -17,8 +17,7 @@ services:
       - USERNAME=${USERNAME}
       - PASSWORD=${PASSWORD}
       - NEXT_PUBLIC_STORAGE_TYPE=${STORAGE_TYPE}
-      - KVROCKS_URL=redis://${CONTAINER_NAME}-kvrocks:6666
-      - REDIS_URL=redis://${CONTAINER_NAME}-redis:6379
+      - KVROCKS_URL=redis://lunatv-kvrocks:6666
     depends_on:
       - lunatv-kvrocks
     labels:

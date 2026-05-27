@@ -106,7 +106,7 @@ additionalProperties:
       values:
         - label: Kvrocks (推荐)
           value: kvrocks
-        - label: Redis
-          value: redis
-        - label: Upstash
-          value: upstash
+        # - label: Redis
+        #   value: redis
+        # - label: Upstash
+        #   value: upstash
