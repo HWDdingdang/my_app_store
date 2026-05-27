@@ -30,6 +30,9 @@ services:
     networks:
       - 1panel-network
     volumes:
-      - ./data/kvrocks:/var/lib/kvrocks
+      - kvrocks-data:/var/lib/kvrocks
     labels:
       createdBy: "Apps"
+      
+volumes:
+  kvrocks-data: 
