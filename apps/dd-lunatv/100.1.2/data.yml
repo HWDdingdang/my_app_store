@@ -1,23 +1,5 @@
 additionalProperties:
   formFields:
-    - default: lunatv
-      edit: true
-      envKey: CONTAINER_NAME
-      label:
-        zh: 容器名称
-        zh-Hant: 容器名稱
-        en: Container Name
-        ja: コンテナ名
-        ko: 컨테이너 이름
-        ru: Имя контейнера
-        fr: Nom du conteneur
-        de: Container-Name
-        es: Nombre del contenedor
-        pt-BR: Nome do Contêiner
-      required: true
-      rule: paramCommon
-      type: text
-
     - default: 3000
       edit: true
       envKey: PANEL_APP_PORT_HTTP
