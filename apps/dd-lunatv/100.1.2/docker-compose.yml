@@ -6,9 +6,9 @@ networks:
 
 services:
   lunatv:
-    image: ghcr.io/moontechlab/lunatv:${IMAGE_TAG}
+    image: ghcr.io/moontechlab/lunatv:latest
     container_name: ${CONTAINER_NAME}
-    restart: unless-stopped
+    restart: on-failure
     networks:
       - 1panel-network
     ports:
@@ -16,38 +16,20 @@ services:
     environment:
       - USERNAME=${USERNAME}
       - PASSWORD=${PASSWORD}
-      - NEXT_PUBLIC_STORAGE_TYPE=${STORAGE_TYPE} # 动态决定使用 kvrocks/redis/upstash
+      - NEXT_PUBLIC_STORAGE_TYPE=kvrocks
       - KVROCKS_URL=redis://lunatv-kvrocks:6666
-      - REDIS_URL=redis://lunatv-redis:6379
-      - UPSTASH_URL=${UPSTASH_URL}
-      - UPSTASH_TOKEN=${UPSTASH_TOKEN}            
     depends_on:
       - lunatv-kvrocks
-      - lunatv-redis
     labels:
       createdBy: "Apps"
 
-  # 本地分布式 Kvrocks 数据库服务
   lunatv-kvrocks:
-    image: apache/kvrocks:latest
+    image: apache/kvrocks
     container_name: ${CONTAINER_NAME}-kvrocks
     restart: unless-stopped
     networks:
       - 1panel-network
     volumes:
-      # 精准挂载到 db 目录，彻底杜绝之前找不到配置文件的报错
-      - ./data/kvrocks:/var/lib/kvrocks/db 
-    labels:
-      createdBy: "Apps"
-
-  # 本地高性能 Redis 数据库服务
-  lunatv-redis:
-    image: redis:alpine
-    container_name: ${CONTAINER_NAME}-redis
-    restart: unless-stopped
-    networks:
-      - 1panel-network
-    volumes:
-      - ./data/redis:/data
+      - ./data/kvrocks:/var/lib/kvrocks
     labels:
       createdBy: "Apps"

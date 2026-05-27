@@ -18,23 +18,6 @@ additionalProperties:
       rule: paramPort
       type: number
 
-    # - default: v100.1.2
-    #   edit: true
-    #   envKey: IMAGE_TAG
-    #   label:
-    #     zh: 镜像版本
-    #     zh-Hant: 映像版本
-    #     en: Image Tag
-    #     ja: イメージタグ
-    #     ko: 이미지 태그
-    #     ru: Тег образа
-    #     fr: Tag de l'image
-    #     de: Image-Tag
-    #     es: Etiqueta de la imagen
-    #     pt-BR: Tag da Imagem
-    #   required: true
-    #   type: text
-
     - default: admin
       edit: true
       envKey: USERNAME
@@ -69,7 +52,6 @@ additionalProperties:
       required: true
       type: password
 
-    # 💾 完美解锁：支持三种存储切换，多语言翻译全量对齐
     - default: kvrocks
       edit: true
       envKey: STORAGE_TYPE
@@ -89,43 +71,43 @@ additionalProperties:
       values:
         - label: "Kvrocks"
           value: kvrocks
-        - label: "Redis"
-          value: redis
-        - label: "Upstash"
-          value: upstash
+        # - label: "Redis"
+        #   value: redis
+        # - label: "Upstash"
+        #   value: upstash
 
     # ☁️ Upstash URL 输入框（带十国语言标签）
-    - default: ""
-      edit: true
-      envKey: UPSTASH_URL
-      label:
-        zh: Upstash URL (仅选 Upstash 时必填)
-        zh-Hant: Upstash URL (僅選 Upstash 時必填)
-        en: Upstash URL (Required only for Upstash)
-        ja: Upstash URL (Upstash 選択時のみ必須)
-        ko: Upstash URL (Upstash 선택 시에만 필수)
-        ru: Upstash URL (Обязательно только для Upstash)
-        fr: URL Upstash (Requis uniquement pour Upstash)
-        de: Upstash-URL (Nur für Upstash erforderlich)
-        es: URL de Upstash (Solo obligatorio para Upstash)
-        pt-BR: URL do Upstash (Obrigatório apenas para Upstash)
-      required: false
-      type: text
+    # - default: ""
+    #   edit: true
+    #   envKey: UPSTASH_URL
+    #   label:
+    #     zh: Upstash URL (仅选 Upstash 时必填)
+    #     zh-Hant: Upstash URL (僅選 Upstash 時必填)
+    #     en: Upstash URL (Required only for Upstash)
+    #     ja: Upstash URL (Upstash 選択時のみ必須)
+    #     ko: Upstash URL (Upstash 선택 시에만 필수)
+    #     ru: Upstash URL (Обязательно только для Upstash)
+    #     fr: URL Upstash (Requis uniquement pour Upstash)
+    #     de: Upstash-URL (Nur für Upstash erforderlich)
+    #     es: URL de Upstash (Solo obligatorio para Upstash)
+    #     pt-BR: URL do Upstash (Obrigatório apenas para Upstash)
+    #   required: false
+    #   type: text
 
     # ☁️ Upstash Token 输入框（
-    - default: ""
-      edit: true
-      envKey: UPSTASH_TOKEN
-      label:
-        zh: Upstash Token (仅选 Upstash 时必填)
-        zh-Hant: Upstash Token (僅選 Upstash 時必填)
-        en: Upstash Token (Required only for Upstash)
-        ja: Upstash Token (Upstash 選択時のみ必須)
-        ko: Upstash Token (Upstash 선택 시에만 필수)
-        ru: Upstash Token (Обязательно только для Upstash)
-        fr: Token Upstash (Requis uniquement pour Upstash)
-        de: Upstash-Token (Nur für Upstash erforderlich)
-        es: Token de Upstash (Solo obligatorio para Upstash)
-        pt-BR: Token do Upstash (Obrigatório apenas para Upstash)
-      required: false
-      type: password
+    # - default: ""
+    #   edit: true
+    #   envKey: UPSTASH_TOKEN
+    #   label:
+    #     zh: Upstash Token (仅选 Upstash 时必填)
+    #     zh-Hant: Upstash Token (僅選 Upstash 時必填)
+    #     en: Upstash Token (Required only for Upstash)
+    #     ja: Upstash Token (Upstash 選択時のみ必須)
+    #     ko: Upstash Token (Upstash 선택 시에만 필수)
+    #     ru: Upstash Token (Обязательно только для Upstash)
+    #     fr: Token Upstash (Requis uniquement pour Upstash)
+    #     de: Upstash-Token (Nur für Upstash erforderlich)
+    #     es: Token de Upstash (Solo obligatorio para Upstash)
+    #     pt-BR: Token do Upstash (Obrigatório apenas para Upstash)
+    #   required: false
+    #   type: password
