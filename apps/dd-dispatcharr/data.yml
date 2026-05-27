@@ -1,0 +1,15 @@
+additionalProperties:
+  key: dd-dispatcharr
+  name: dispatcharr
+  tags:
+    - Media
+    - Tool
+  description:
+    en: IPTV playlist editor, EPG manager and stream proxy
+    zh: IPTV 播放列表编辑、EPG 管理和流媒体代理工具
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  website: https://dispatcharr.github.io/Dispatcharr-Docs/
+  github: https://github.com/Dispatcharr/Dispatcharr
+  document: https://dispatcharr.github.io/Dispatcharr-Docs/

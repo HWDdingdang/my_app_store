@@ -1,0 +1,25 @@
+version: "3"
+
+networks:
+  1panel-network:
+    external: true
+
+services:
+  dispatcharr:
+    image: ghcr.io/dispatcharr/dispatcharr:${IMAGE_TAG}
+    container_name: ${CONTAINER_NAME}
+    restart: unless-stopped
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:9191"
+    volumes:
+      - ./data:/data
+    environment:
+      - DISPATCHARR_ENV=aio
+      - REDIS_HOST=127.0.0.1
+      - CELERY_BROKER_URL=redis://127.0.0.1:6379/0
+      - DISPATCHARR_LOG_LEVEL=${DISPATCHARR_LOG_LEVEL}
+      - USE_LEGACY_NUMPY=${USE_LEGACY_NUMPY}
+    labels:
+      createdBy: "Apps"

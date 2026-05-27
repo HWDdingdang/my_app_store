@@ -1,0 +1,92 @@
+formFields:
+  - default: dispatcharr
+    edit: true
+    envKey: CONTAINER_NAME
+    label:
+      zh: 容器名称
+      zh-Hant: 容器名稱
+      en: Container Name
+      ja: コンテナ名
+      ko: 컨테이너 이름
+      ru: Имя контейнера
+      fr: Nom du conteneur
+      de: Container-Name
+      es: Nombre del contenedor
+      pt-BR: Nome do Contêiner
+    required: true
+    rule: paramCommon
+    type: text
+
+  - default: 9191
+    edit: true
+    envKey: PANEL_APP_PORT_HTTP
+    label:
+      zh: Web 端口
+      zh-Hant: Web 連接埠
+      en: Web Port
+      ja: Web ポート
+      ko: Web 포트
+      ru: Web-порт
+      fr: Port Web
+      de: Web-Port
+      es: Puerto Web
+      pt-BR: Porta Web
+    required: true
+    rule: paramPort
+    type: number
+
+  - default: 0.25.1-20260524024735
+    edit: true
+    envKey: IMAGE_TAG
+    label:
+      zh: 镜像版本
+      zh-Hant: 映像版本
+      en: Image Tag
+      ja: イメージタグ
+      ko: 이미지 태그
+      ru: Тег образа
+      fr: Tag de l'image
+      de: Image-Tag
+      es: Etiqueta de la imagen
+      pt-BR: Tag da Imagem
+    required: true
+    type: text
+
+  - default: info
+    edit: true
+    envKey: DISPATCHARR_LOG_LEVEL
+    label:
+      zh: 日志级别
+      zh-Hant: 日誌級別
+      en: Log Level
+      ja: ログレベル
+      ko: 로그 레벨
+      ru: Уровень логов
+      fr: Niveau de journalisation
+      de: Protokollebene
+      es: Nivel de registro
+      pt-BR: Nível de Log
+    required: true
+    type: text
+
+  - default: "false"
+    edit: true
+    envKey: USE_LEGACY_NUMPY
+    label:
+      zh: 旧 CPU NumPy 兼容 (2009年前老CPU开启)
+      zh-Hant: 舊 CPU NumPy 相容 (2009年前老CPU開啟)
+      en: Legacy NumPy Support (Enable for CPUs before 2009)
+      ja: 互換性 NumPy（2009年以前の古いCPU向け）
+      ko: 구형 CPU NumPy 호환 (2009년 이전 CPU 지원)
+      ru: Поддержка старых CPU NumPy (Для процессоров до 2009 года)
+      fr: Compatibilité NumPy (Pour les anciens processeurs avant 2009)
+      de: Legacy-NumPy-Unterstützung (Für CPUs vor 2009 aktivieren)
+      es: Compatibilidad con NumPy antiguo (Para CPU anteriores a 2009)
+      pt-BR: Suporte NumPy Legado (Ativar para CPUs anteriores a 2009)
+    required: true
+    type: select
+    values:
+      - label: "false"
+        value: "false"
+      - label: "true"
+        value: "true"

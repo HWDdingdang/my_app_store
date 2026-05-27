@@ -1,6 +1,6 @@
 additionalProperties:
   key: dd-iptv-api
-  name: dd-iptv-api
+  name: iptv-api
   tags:
     - Media
     - Tool
