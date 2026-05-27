@@ -1,0 +1,15 @@
+additionalProperties:
+  key: dd-lunatv
+  name: dd lunatv
+  tags:
+    - Media
+    - Tool
+  description:
+    en: Out-of-the-box cross-platform media aggregation player
+    zh: 开箱即用的跨平台影视聚合播放站
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  website: https://github.com/MoonTechLab/LunaTV
+  github: https://github.com/MoonTechLab/LunaTV
+  document: https://github.com/MoonTechLab/LunaTV

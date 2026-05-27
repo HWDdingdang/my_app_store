@@ -1,0 +1,112 @@
+additionalProperties:
+  formFields:
+    - default: lunatv
+      edit: true
+      envKey: CONTAINER_NAME
+      label:
+        zh: 容器名称
+        zh-Hant: 容器名稱
+        en: Container Name
+        ja: コンテナ名
+        ko: 컨테이너 이름
+        ru: Имя контейнера
+        fr: Nom du conteneur
+        de: Container-Name
+        es: Nombre del contenedor
+        pt-BR: Nome do Contêiner
+      required: true
+      rule: paramCommon
+      type: text
+
+    - default: 3000
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      label:
+        zh: Web 端口
+        zh-Hant: Web 連接埠
+        en: Web Port
+        ja: Web ポート
+        ko: Web 포트
+        ru: Web-порт
+        fr: Port Web
+        de: Web-Port
+        es: Puerto Web
+        pt-BR: Porta Web
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: 100.1.2
+      edit: true
+      envKey: IMAGE_TAG
+      label:
+        zh: 镜像版本
+        zh-Hant: 映像版本
+        en: Image Tag
+        ja: イメージタグ
+        ko: 이미지 태그
+        ru: Тег образа
+        fr: Tag de l'image
+        de: Image-Tag
+        es: Etiqueta de la imagen
+        pt-BR: Tag da Imagem
+      required: true
+      type: text
+
+    - default: admin
+      edit: true
+      envKey: USERNAME
+      label:
+        zh: 管理员账号
+        zh-Hant: 管理員帳號
+        en: Admin Username
+        ja: 管理者ユーザー名
+        ko: 관리자 사용자 이름
+        ru: Имя администратора
+        fr: Nom d'utilisateur admin
+        de: Admin-Benutzername
+        es: Usuario administrador
+        pt-BR: Nome de Usuário Admin
+      required: true
+      type: text
+
+    - default: admin123
+      edit: true
+      envKey: PASSWORD
+      label:
+        zh: 管理员密码
+        zh-Hant: 管理員密碼
+        en: Admin Password
+        ja: 管理者パスワード
+        ko: 관리자 비밀번호
+        ru: Пароль администратора
+        fr: Mot de passe admin
+        de: Admin-Passwort
+        es: Contraseña administrador
+        pt-BR: Senha do Admin
+      required: true
+      type: password
+
+    - default: kvrocks
+      edit: true
+      envKey: STORAGE_TYPE
+      label:
+        zh: 存储类型
+        zh-Hant: 存儲類型
+        en: Storage Type
+        ja: ストレージタイプ
+        ko: 스토리지 유형
+        ru: Тип хранилища
+        fr: Type de stockage
+        de: Speichertyp
+        es: Tipo de almacenamiento
+        pt-BR: Tipo de Armazenamento
+      required: true
+      type: select
+      values:
+        - label: Kvrocks (推荐)
+          value: kvrocks
+        - label: Redis
+          value: redis
+        - label: Upstash
+          value: upstash
