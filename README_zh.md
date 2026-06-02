@@ -29,14 +29,6 @@
    * **任务类型**: Shell 脚本
    * **任务名称**: 定时同步第三方应用商店
    * **执行周期**: 建议设置为“每天”或“每小时”（根据您的更新频率而定）
-3. 在弹出的 **脚本内容** 输入框中，直接粘贴以下全自动流水线代码：
-
-```bash
-#!/bin/bash
-set -e
-
-# 从主仓库动态下载最新版同步引擎并执行
-curl -sSO [https://raw.githubusercontent.com/HWDdingdang/my_app_store/main/sync.sh](https://raw.githubusercontent.com/HWDdingdang/my_app_store/main/sync.sh)
-chmod +x sync.sh
-sudo ./sync.sh
-rm -f sync.sh
+3. 复制本仓库中 sync.sh 的完整代码，直接粘贴到 1Panel 的 脚本内容 输入框中
+4. 点击 确定 保存，随后在任务列表中点击一次 执行。
+5. 执行完毕后，进入面板的 应用商店 -> 本地应用 -> 点击右上角“刷新”，你最新的应用就会整整齐齐地全部呈现出来！
