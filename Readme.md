@@ -18,14 +18,14 @@ The store currently maintains and features the following application extensions:
 
 ## ⏰ Automated Sync via 1Panel Cronjob (Recommended)
 
-Instead of running the script manually, you can set up a **Cronjob (计划任务)** inside your 1Panel dashboard to automatically keep the application store up-to-date.
+Instead of running the script manually, you can set up a **Cronjob** inside your 1Panel dashboard to automatically keep the application store up-to-date.
 
 ### Deployment Steps:
-1. Log into your **1Panel Dashboard** -> Navigate to **Cronjobs (计划任务)**.
-2. Click **Create Cronjob (创建计划任务)** and configure the following parameters:
-   * **Type (任务类型):** Shell Script
-   * **Name (任务名称):** Sync Third-Party App Store
-   * **Execution Cycle (执行周期):** e.g., Every Day (每天) or Every Hour (每小时)
-3. 复制本仓库中 **`sync.sh`** 的完整代码，直接粘贴到 1Panel 的 **脚本内容** 输入框中
-4. 点击 确定 保存，随后在任务列表中点击一次 执行。
-5. 执行完毕后，进入面板的 应用商店 -> 本地应用 -> 点击右上角“刷新”，你最新的应用就会整整齐齐地全部呈现出来！
+1. Log into your **1Panel Dashboard** -> Navigate to **Cronjobs**.
+2. Click **Create Cronjob** and configure the following parameters:
+   * **Type:** Shell Script
+   * **Name:** Sync Third-Party App Store
+   * **Execution Cycle:** e.g., Every Day (每天) or Every Hour (每小时)
+3. Copy the full content of **`sync.sh`** from this repository and paste it directly into the **Script Content** field:
+4. Click Save, then click Execute (执行) to run it immediately.
+5. Go to App Store -> Local Apps, and click Refresh in the top right corner. All third-party apps will seamlessly appear!
