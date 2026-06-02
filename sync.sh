@@ -4,8 +4,7 @@ set -e
 # ==================== CONFIGURATION ====================
 # Replace with your own 1Panel App Store repository URL
 # 替换为你自己的 1Panel 应用商店扩展仓库地址
-REPO_URL="git@github.com:YOUR_USERNAME/YOUR_REPO_NAME.git"
-# REPO_URL="https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git"
+# REPO_URL="https://github.com/HWDdingdang/my_app_store.git"
 
 # Local workspace cache directory
 # 本地临时工作区缓存目录
