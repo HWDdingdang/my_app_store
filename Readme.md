@@ -26,14 +26,4 @@ Instead of running the script manually, you can set up a **Cronjob (计划任务
    * **Type (任务类型):** Shell Script
    * **Name (任务名称):** Sync Third-Party App Store
    * **Execution Cycle (执行周期):** e.g., Every Day (每天) or Every Hour (每小时)
-3. Paste the following automated execution code into the **Script Content (脚本内容)** field:
-
-```bash
-#!/bin/bash
-set -e
-
-# Download the latest production sync engine and execute
-curl -sSO [https://raw.githubusercontent.com/HWDdingdang/my_app_store/main/sync.sh](https://raw.githubusercontent.com/HWDdingdang/my_app_store/main/sync.sh)
-chmod +x sync.sh
-sudo ./sync.sh
-rm -f sync.sh
+3. Copy the full content of **`sync.sh`** from this repository and paste it directly into the **Script Content (脚本内容)** field:
