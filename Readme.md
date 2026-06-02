@@ -26,4 +26,6 @@ Instead of running the script manually, you can set up a **Cronjob (计划任务
    * **Type (任务类型):** Shell Script
    * **Name (任务名称):** Sync Third-Party App Store
    * **Execution Cycle (执行周期):** e.g., Every Day (每天) or Every Hour (每小时)
-3. Copy the full content of **`sync.sh`** from this repository and paste it directly into the **Script Content (脚本内容)** field:
+3. 复制本仓库中 **`sync.sh`** 的完整代码，直接粘贴到 1Panel 的 **脚本内容** 输入框中
+4. 点击 确定 保存，随后在任务列表中点击一次 执行。
+5. 执行完毕后，进入面板的 应用商店 -> 本地应用 -> 点击右上角“刷新”，你最新的应用就会整整齐齐地全部呈现出来！
