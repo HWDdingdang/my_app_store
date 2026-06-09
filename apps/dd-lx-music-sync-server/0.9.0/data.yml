@@ -18,7 +18,7 @@ additionalProperties:
       rule: paramPort
       type: number
 
-    - default: ""
+    - default: "lx-music"
       edit: true
       envKey: SERVER_NAME
       label:
@@ -35,7 +35,7 @@ additionalProperties:
       required: false
       type: text
 
-    - default: ""
+    - default: "1"
       edit: true
       envKey: MAX_SNAPSHOT_NUM
       label:
@@ -51,3 +51,54 @@ additionalProperties:
         pt-BR: Número Máx. de Snapshots
       required: false
       type: number
+
+    - default: "admin@123456"
+      edit: true
+      envKey: LX_USER_ADMIN_PASSWORD
+      label:
+        zh: admin 连接码
+        zh-Hant: admin 連接碼
+        en: Admin Password
+        ja: admin 接続コード
+        ko: admin 연결 코드
+        ru: Код подключения admin
+        fr: Code de connexion admin
+        de: Admin-Verbindungscode
+        es: Código de conexão admin
+        pt-BR: Código de conexão admin
+      required: true
+      type: password
+      
+    - default: "dingdang@123456"
+      edit: true
+      envKey: LX_USER_DINGDANG_PASSWORD
+      label:
+        zh: dingdang 连接码
+        zh-Hant: dingdang 連接碼
+        en: Dingdang Password
+        ja: dingdang 接続コード
+        ko: dingdang 연결 코드
+        ru: Код подключения dingdang
+        fr: Code de connexion dingdang
+        de: dingdang-Verbindungscode
+        es: Código de conexão dingdang
+        pt-BR: Código de conexão dingdang
+      required: false
+      type: password
+
+    - default: "testuser@123456"
+      edit: true
+      envKey: LX_USER_TESTUSER_PASSWORD
+      label:
+        zh: testUser 连接码
+        zh-Hant: testUser 連接碼
+        en: testUser Password
+        ja: testUser 接続コード
+        ko: testUser 연결 코드
+        ru: Код подключения testUser
+        fr: Code de connexion testUser
+        de: testUser-Verbindungscode
+        es: Código de conexão testUser
+        pt-BR: Código de conexão testUser
+      required: false
+      type: password
