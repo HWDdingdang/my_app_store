@@ -94,7 +94,7 @@ additionalProperties:
         # - label: "Upstash"
         #   value: upstash
 
-    - default: v100.1.2
+    - default: v100.1.3
       edit: true
       envKey: IMAGE_TAG
       label:

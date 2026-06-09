@@ -1,0 +1,53 @@
+additionalProperties:
+  formFields:
+    - default: 9527
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      label:
+        zh: 服务端口
+        zh-Hant: 服務端口
+        en: Service Port
+        ja: サービスポート
+        ko: 서비스 포트
+        ru: Порт сервиса
+        fr: Port du service
+        de: Dienst-Port
+        es: Puerto del servicio
+        pt-BR: Porta do Serviço
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: ""
+      edit: true
+      envKey: SERVER_NAME
+      label:
+        zh: 服务名称
+        zh-Hant: 服務名稱
+        en: Server Name
+        ja: サーバー名
+        ko: 서버 이름
+        ru: Имя сервера
+        fr: Nom du serveur
+        de: Server-Name
+        es: Nombre del servidor
+        pt-BR: Nome do Servidor
+      required: false
+      type: text
+
+    - default: ""
+      edit: true
+      envKey: MAX_SNAPSHOT_NUM
+      label:
+        zh: 最大备份快照数
+        zh-Hant: 最大備份快照數
+        en: Max Snapshot Number
+        ja: 最大スナップショット数
+        ko: 최대 스냅샷 수
+        ru: Макс. количество снимков
+        fr: Nombre max de snapshots
+        de: Maximale Snapshot-Anzahl
+        es: Número máx. de instantáneas
+        pt-BR: Número Máx. de Snapshots
+      required: false
+      type: number

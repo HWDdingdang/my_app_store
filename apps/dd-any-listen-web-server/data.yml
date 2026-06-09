@@ -1,0 +1,23 @@
+additionalProperties:
+  key: dd-any-listen-web-server
+  name: dd any-listen-web-server
+  tags:
+    - Media
+    - Music
+  description:
+    en: Cross-platform private music playback service
+    zh: 跨平台的私人音乐播放服务
+    zh-Hant: 跨平台的私人音樂播放服務
+    ja: クロスプラットフォームのプライベート音楽再生サービス
+    ko: 크로스 플랫폼 개인 음악 재생 서비스
+    ru: Кроссплатформенный сервис частного музыкального воспроизведения
+    fr: Service de lecture de musique privée multiplateforme
+    de: Plattformübergreifender privater Musikwiedergabedienst
+    es: Servicio de reproducción de música privada multiplataforma
+    pt-BR: Serviço de reprodução de música privada multiplataforma
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  website: https://github.com/lyswhut/any-listen-web-server
+  github: https://github.com/lyswhut/any-listen-web-server
+  document: https://github.com/lyswhut/any-listen-web-server

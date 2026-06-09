@@ -1,0 +1,24 @@
+version: '3'
+
+networks:
+  1panel-network:
+    external: true
+
+services:
+  any-listen:
+    image: lyswhut/any-listen-web-server:0.9.0-beta.25
+    container_name: ${CONTAINER_NAME}
+    restart: unless-stopped
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:9500"
+    environment:
+      - PORT=9500
+      - BIND_IP=0.0.0.0
+      - LOGIN_PWD=${LOGIN_PWD}
+      - DATA_PATH=/app/data
+    volumes:
+      - ./data:/app/data
+    labels:
+      createdBy: "Apps"

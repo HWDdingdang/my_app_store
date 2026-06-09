@@ -1,0 +1,23 @@
+additionalProperties:
+  key: dd-lx-music-sync-server
+  name: dd lx-music-sync-server
+  tags:
+    - Media
+    - Music
+  description:
+    en: LX Music data synchronization server, running on Node.js
+    zh: LX Music（落雪音乐）数据同步服务，运行在 Node.js 上
+    zh-Hant: LX Music（落雪音樂）資料同步服務，運行在 Node.js 上
+    ja: LX Music データ同期サービス、Node.js 上で実行
+    ko: LX Music 데이터 동기화 서비스, Node.js에서 실행
+    ru: Сервис синхронизации данных LX Music, работающий на Node.js
+    fr: Service de synchronisation de données LX Music, fonctionnant sur Node.js
+    de: LX Music Datensynchronisierungsdienst, läuft auf Node.js
+    es: Servicio de sincronización de datos de LX Music, ejecutándose en Node.js
+    pt-BR: Serviço de sincronização de dados do LX Music, rodando em Node.js
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  website: https://github.com/lyswhut/lx-music-sync-server
+  github: https://github.com/lyswhut/lx-music-sync-server
+  document: https://github.com/lyswhut/lx-music-sync-server

@@ -1,0 +1,36 @@
+additionalProperties:
+  formFields:
+    - default: 9500
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      label:
+        zh: Web 端口
+        zh-Hant: Web 連接埠
+        en: Web Port
+        ja: Web ポート
+        ko: Web 포트
+        ru: Web-порт
+        fr: Port Web
+        de: Web-Port
+        es: Puerto Web
+        pt-BR: Porta Web
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: "any_listen"
+      edit: true
+      envKey: LOGIN_PWD
+      label:
+        zh: 登录密码（留空则不启用密码）
+        zh-Hant: 登入密碼（留空則不啟用密碼）
+        en: Login Password (leave empty to disable)
+        ja: ログインパスワード（空の場合は無効）
+        ko: 로그인 비밀번호（비워두면 비활성화）
+        ru: Пароль для входа（оставьте пустым, чтобы отключить）
+        fr: Mot de passe (laisser vide pour désactiver)
+        de: Anmelde-Passwort（leer lassen zum Deaktivieren）
+        es: Contraseña（dejar vacío para deshabilitar）
+        pt-BR: Senha de Login（deixe vazio para desabilitar）
+      required: false
+      type: password
