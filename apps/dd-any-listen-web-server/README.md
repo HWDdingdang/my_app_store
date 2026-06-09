@@ -1,16 +1,3 @@
-<p align="center">
-    <a href="https://github.com/any-listen/any-listen">
-        <img height="110" src="./images/header-logo.svg" alt="any-listen logo"></a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://github.com/any-listen/any-listen">
-        <img height="86" src="./images/header-name.svg" alt="any-listen name"></a>
-    </p>
-
-<p align="center">一款跨平台的私人音乐播放服务</p>
-
-
-项目仍在积极开发中，目前提供 **桌面版** 与 **网页版服务**。
-
 ## 特性
 
 - 添加并播放本地歌曲（普通列表、本地列表）
