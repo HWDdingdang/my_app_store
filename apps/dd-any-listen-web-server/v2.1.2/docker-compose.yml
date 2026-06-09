@@ -1,21 +1,12 @@
-version: '3'
-
 networks:
   1panel-network:
     external: true
 
 services:
-  init-permissions:
-    image: alpine:3.20
-    container_name: ${CONTAINER_NAME}-init
-    command: sh -c "mkdir -p /app/data/logs && chmod -R 777 /app/data"
-    volumes:
-      - ./data:/app/data
-    restart: "no"
-    
   any-listen:
     image: lyswhut/any-listen-web-server:0.9.0-beta.25
     container_name: ${CONTAINER_NAME}
+    user: "0:0"
     restart: unless-stopped
     networks:
       - 1panel-network
@@ -26,7 +17,9 @@ services:
       - BIND_IP=0.0.0.0
       - LOGIN_PWD=${LOGIN_PWD}
       - DATA_PATH=/app/data
+      - ALLOW_PUBLIC_DIR=/music
     volumes:
       - ./data:/app/data
+      - ./music:/music
     labels:
       createdBy: "Apps"
