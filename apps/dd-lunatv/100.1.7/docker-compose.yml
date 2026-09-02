@@ -6,7 +6,7 @@ networks:
 
 services:
   lunatv:
-    image: ghcr.io/hwddingdang/lunatv:100.1.6
+    image: ghcr.io/hwddingdang/lunatv:100.1.7
     container_name: ${CONTAINER_NAME}
     restart: on-failure
     networks:
