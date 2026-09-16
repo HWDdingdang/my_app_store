@@ -1,0 +1,23 @@
+additionalProperties:
+  key: dd-cc-switch-web
+  name: dd cc-switch-web
+  tags:
+    - AI
+    - Tool
+  description:
+    en: Web-based management tool for AI coding assistants and CLI providers
+    zh: 基于 Web 的 AI 编程助手与 CLI 供应商配置管理工具
+    zh-Hant: 基於 Web 的 AI 程式設計助手與 CLI 供應商設定管理工具
+    ja: AI コーディングアシスタントと CLI プロバイダーを管理する Web ツール
+    ko: AI 코딩 도우미와 CLI 공급자를 관리하는 웹 도구
+    ru: Веб-инструмент для управления ИИ-ассистентами и поставщиками CLI
+    fr: Outil Web de gestion des assistants de programmation IA et fournisseurs CLI
+    de: Webtool zur Verwaltung von KI-Coding-Assistenten und CLI-Anbietern
+    es: Herramienta web para gestionar asistentes de programación con IA y proveedores CLI
+    pt-BR: Ferramenta web para gerenciar assistentes de programação de IA e provedores CLI
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  website: https://github.com/zuoliangyu/cc-switch-web
+  github: https://github.com/zuoliangyu/cc-switch-web
+  document: https://github.com/zuoliangyu/cc-switch-web
