@@ -18,7 +18,7 @@ additionalProperties:
       rule: paramCommon
       type: text
 
-    - default: 8890
+    - default: 3000
       edit: true
       envKey: PANEL_APP_PORT_HTTP
       label:
@@ -35,20 +35,3 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
-
-    - default: ""
-      edit: true
-      envKey: CC_SWITCH_WEB_ACCESS_KEY
-      label:
-        zh: 访问密钥（可选，至少 16 个字符）
-        zh-Hant: 存取金鑰（選填，至少 16 個字元）
-        en: Access Key (optional, at least 16 characters)
-        ja: アクセスキー（任意、16 文字以上）
-        ko: 액세스 키 (선택 사항, 16자 이상)
-        ru: Ключ доступа (необязательно, не менее 16 символов)
-        fr: Clé d'accès (facultative, 16 caractères minimum)
-        de: Zugriffsschlüssel (optional, mindestens 16 Zeichen)
-        es: Clave de acceso (opcional, mínimo 16 caracteres)
-        pt-BR: Chave de acesso (opcional, pelo menos 16 caracteres)
-      required: false
-      type: password

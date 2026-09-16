@@ -18,6 +18,6 @@ additionalProperties:
   type: tool
   crossVersionUpdate: true
   limit: 1
-  website: https://github.com/zuoliangyu/cc-switch-web
-  github: https://github.com/zuoliangyu/cc-switch-web
-  document: https://github.com/zuoliangyu/cc-switch-web
+  website: https://github.com/Laliet/cc-switch-web
+  github: https://github.com/Laliet/cc-switch-web
+  document: https://github.com/Laliet/cc-switch-web
