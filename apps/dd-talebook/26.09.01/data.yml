@@ -1,0 +1,105 @@
+additionalProperties:
+  formFields:
+    - default: talebook
+      edit: true
+      envKey: CONTAINER_NAME
+      label:
+        zh: 容器名称
+        zh-Hant: 容器名稱
+        en: Container Name
+        ja: コンテナ名
+        ko: 컨테이너 이름
+        ru: Имя контейнера
+        fr: Nom du conteneur
+        de: Container-Name
+        es: Nombre del contenedor
+        pt-BR: Nome do contêiner
+      required: true
+      rule: paramCommon
+      type: text
+
+    - default: 8080
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      label:
+        zh: Web 端口
+        zh-Hant: Web 連接埠
+        en: Web Port
+        ja: Web ポート
+        ko: Web 포트
+        ru: Web-порт
+        fr: Port Web
+        de: Web-Port
+        es: Puerto Web
+        pt-BR: Porta Web
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: v26.09.01
+      edit: true
+      envKey: IMAGE_TAG
+      label:
+        zh: 镜像版本
+        zh-Hant: 映像版本
+        en: Image Tag
+        ja: イメージタグ
+        ko: 이미지 태그
+        ru: Тег образа
+        fr: Tag de l'image
+        de: Image-Tag
+        es: Etiqueta de la imagen
+        pt-BR: Tag da imagem
+      required: true
+      type: text
+
+    - default: 1000
+      edit: true
+      envKey: PUID
+      label:
+        zh: 用户 ID
+        zh-Hant: 使用者 ID
+        en: User ID
+        ja: ユーザー ID
+        ko: 사용자 ID
+        ru: ID пользователя
+        fr: ID utilisateur
+        de: Benutzer-ID
+        es: ID de usuario
+        pt-BR: ID do usuário
+      required: true
+      type: number
+
+    - default: 1000
+      edit: true
+      envKey: PGID
+      label:
+        zh: 用户组 ID
+        zh-Hant: 使用者群組 ID
+        en: Group ID
+        ja: グループ ID
+        ko: 그룹 ID
+        ru: ID группы
+        fr: ID de groupe
+        de: Gruppen-ID
+        es: ID de grupo
+        pt-BR: ID do grupo
+      required: true
+      type: number
+
+    - default: Asia/Shanghai
+      edit: true
+      envKey: TIME_ZONE
+      label:
+        zh: 时区
+        zh-Hant: 時區
+        en: Time Zone
+        ja: タイムゾーン
+        ko: 시간대
+        ru: Часовой пояс
+        fr: Fuseau horaire
+        de: Zeitzone
+        es: Zona horaria
+        pt-BR: Fuso horário
+      required: true
+      type: text

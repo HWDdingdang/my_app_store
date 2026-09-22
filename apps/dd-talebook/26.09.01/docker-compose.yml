@@ -1,0 +1,21 @@
+networks:
+  1panel-network:
+    external: true
+
+services:
+  talebook:
+    image: ghcr.io/talebook/talebook:${IMAGE_TAG}
+    container_name: ${CONTAINER_NAME}
+    restart: unless-stopped
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:80"
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TIME_ZONE}
+    volumes:
+      - ./data:/data
+    labels:
+      createdBy: "Apps"

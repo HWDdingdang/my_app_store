@@ -1,0 +1,23 @@
+additionalProperties:
+  key: dd-talebook
+  name: dd talebook
+  tags:
+    - Media
+    - Tool
+  description:
+    en: A simple and user-friendly personal library management system built on Calibre
+    zh: 基于 Calibre 的简单好用的个人图书管理系统
+    zh-Hant: 基於 Calibre 的簡單易用個人圖書管理系統
+    ja: Calibre をベースにしたシンプルで使いやすい個人向け電子書籍管理システム
+    ko: Calibre 기반의 간단하고 사용하기 쉬운 개인 전자책 관리 시스템
+    ru: Простая и удобная система управления личной библиотекой на базе Calibre
+    fr: Système simple de gestion de bibliothèque personnelle basé sur Calibre
+    de: Einfaches persönliches Bibliotheksverwaltungssystem auf Basis von Calibre
+    es: Sistema sencillo de gestión de bibliotecas personales basado en Calibre
+    pt-BR: Sistema simples de gerenciamento de biblioteca pessoal baseado no Calibre
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  website: https://www.talebook.org/
+  github: https://github.com/talebook/talebook
+  document: https://www.talebook.org/docs/
