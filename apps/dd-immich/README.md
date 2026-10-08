@@ -12,7 +12,7 @@ Immich 是一个高性能、自托管的照片和视频备份与管理平台，�
 
 ## 部署说明
 
-本应用基于 Immich v3.2.2 官方 Docker Compose 编排，包含 Immich Server、机器学习、Valkey 和 PostgreSQL 四个容器。安装完成后，通过配置的 Web 端口访问，首个注册用户将成为管理员。
+本应用基于 Immich v3.3.0 官方 Docker Compose 编排，包含 Immich Server、机器学习、Valkey 和 PostgreSQL 四个容器。安装完成后，通过配置的 Web 端口访问，首个注册用户将成为管理员。
 
 官方建议至少准备 2 个 CPU 核心和 6 GB 内存。数据库目录必须位于支持 Unix 所有权和权限的本地文件系统上，不要放在 NFS、SMB 等网络共享中。
 
@@ -33,9 +33,19 @@ Immich 是一个高性能、自托管的照片和视频备份与管理平台，�
 - 移动端服务器地址填写 `https://你的域名`，或在局域网内填写 `http://服务器IP:端口`。
 - Immich 不支持降级；升级前应阅读对应版本的发布说明并完成备份。
 
+## v3.3.0 更新
+
+- 支持共享人物管理和生日回忆。
+- 手机端上传的编辑照片可自动与原图堆叠。
+- 支持每次登录时同步 OAuth 声明，并改善缩略图和预览质量。
+- 更新 Valkey 镜像摘要，PostgreSQL 镜像保持不变。
+
+新版机器学习模型为可选功能。如需启用，可在部署实例的 `.env` 中添加 `MACHINE_LEARNING_MODEL_REVISION=v2`，并重新创建机器学习容器。首次加载会下载并准备新模型，无需重新运行已有识别任务。
+
 ## 相关链接
 
 - [项目主页](https://immich.app/)
 - [GitHub 仓库](https://github.com/immich-app/immich)
 - [官方文档](https://docs.immich.app/)
 - [v3.2.2 发布说明](https://github.com/immich-app/immich/releases/tag/v3.2.2)
+- [v3.3.0 发布说明](https://github.com/immich-app/immich/releases/tag/v3.3.0)
