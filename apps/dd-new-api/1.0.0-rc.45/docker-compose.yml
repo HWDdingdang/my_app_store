@@ -1,0 +1,30 @@
+networks:
+  1panel-network:
+    external: true
+
+services:
+  new-api:
+    image: calciumion/new-api:v1.0.0-rc.45
+    container_name: ${CONTAINER_NAME}
+    restart: unless-stopped
+    command: ["--log-dir", "/app/logs"]
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:3000"
+    environment:
+      TZ: Asia/Shanghai
+      SESSION_SECRET: ${SESSION_SECRET:?Please set a persistent random session secret}
+      SESSION_COOKIE_SECURE: "${SESSION_COOKIE_SECURE:-false}"
+      SESSION_COOKIE_TRUSTED_URL: "${SESSION_COOKIE_TRUSTED_URL:-}"
+    volumes:
+      - ./data:/data
+      - ./logs:/app/logs
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O - http://localhost:3000/api/status | grep -q '\"success\":[[:space:]]*true'"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    labels:
+      createdBy: "Apps"

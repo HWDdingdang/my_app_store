@@ -1,0 +1,23 @@
+additionalProperties:
+  key: dd-new-api
+  name: dd new-api
+  tags:
+    - AI
+    - Tool
+  description:
+    en: Self-hosted AI gateway for model access, API keys, usage and cost management
+    zh: 自托管 AI 网关，统一管理模型接入、API 密钥、用量与成本
+    zh-Hant: 自託管 AI 閘道，統一管理模型接入、API 金鑰、用量與成本
+    ja: モデル接続、API キー、使用量とコストを管理するセルフホスト型 AI ゲートウェイ
+    ko: 모델 연결, API 키, 사용량 및 비용을 관리하는 자체 호스팅 AI 게이트웨이
+    ru: Самостоятельно размещаемый ИИ-шлюз для управления моделями, API-ключами, использованием и затратами
+    fr: Passerelle IA auto-hébergée pour gérer les modèles, clés API, usages et coûts
+    de: Selbst gehostetes KI-Gateway zur Verwaltung von Modellen, API-Schlüsseln, Nutzung und Kosten
+    es: Pasarela de IA autoalojada para gestionar modelos, claves API, uso y costes
+    pt-BR: Gateway de IA auto-hospedado para gerenciar modelos, chaves API, uso e custos
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  website: https://www.newapi.ai/
+  github: https://github.com/QuantumNous/new-api
+  document: https://docs.newapi.ai/zh/docs
