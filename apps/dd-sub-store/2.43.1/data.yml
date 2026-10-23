@@ -1,0 +1,71 @@
+additionalProperties:
+  formFields:
+    - default: sub-store
+      edit: true
+      envKey: CONTAINER_NAME
+      label:
+        zh: 容器名称
+        zh-Hant: 容器名稱
+        en: Container Name
+        ja: コンテナ名
+        ko: 컨테이너 이름
+        ru: Имя контейнера
+        fr: Nom du conteneur
+        de: Container-Name
+        es: Nombre del contenedor
+        pt-BR: Nome do Contêiner
+      required: true
+      rule: paramCommon
+      type: text
+
+    - default: 3001
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      label:
+        zh: Web 端口
+        zh-Hant: Web 連接埠
+        en: Web Port
+        ja: Web ポート
+        ko: Web 포트
+        ru: Web-порт
+        fr: Port Web
+        de: Web-Port
+        es: Puerto Web
+        pt-BR: Porta Web
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: ""
+      edit: true
+      envKey: SUB_STORE_BACKEND_TOKEN
+      label:
+        zh: 后端访问密钥（至少 32 位随机字母数字，不含斜杠）
+        zh-Hant: 後端存取金鑰（至少 32 位隨機英數字，不含斜線）
+        en: Backend Token (32+ random letters and digits, no slash)
+        ja: バックエンドキー（ランダムな英数字32文字以上、スラッシュなし）
+        ko: 백엔드 키 (임의의 영숫자 32자 이상, 슬래시 제외)
+        ru: Ключ бэкенда (32+ случайных букв и цифр, без слеша)
+        fr: Clé du backend (32+ caractères alphanumériques aléatoires, sans barre oblique)
+        de: Backend-Schlüssel (32+ zufällige Buchstaben und Ziffern, ohne Schrägstrich)
+        es: Clave del backend (32+ letras y dígitos aleatorios, sin barra)
+        pt-BR: Chave do backend (32+ letras e dígitos aleatórios, sem barra)
+      required: true
+      type: password
+
+    - default: "https://sub-store.vercel.app,http://substore.stash,https://substore.stash"
+      edit: true
+      envKey: SUB_STORE_CORS_ALLOWED_ORIGINS
+      label:
+        zh: CORS 允许来源（协议、域名及端口，多个用逗号分隔）
+        zh-Hant: CORS 允許來源（協定、網域及連接埠，多個以逗號分隔）
+        en: CORS Allowed Origins (scheme, host and port, comma-separated)
+        ja: CORS 許可元（スキーム・ホスト・ポート、カンマ区切り）
+        ko: CORS 허용 출처 (스킴, 호스트 및 포트, 쉼표로 구분)
+        ru: Разрешённые источники CORS (схема, хост и порт, через запятую)
+        fr: Origines CORS autorisées (protocole, hôte et port, séparés par des virgules)
+        de: Erlaubte CORS-Ursprünge (Schema, Host und Port, kommagetrennt)
+        es: Orígenes CORS permitidos (esquema, host y puerto, separados por comas)
+        pt-BR: Origens CORS permitidas (esquema, host e porta, separados por vírgulas)
+      required: true
+      type: text

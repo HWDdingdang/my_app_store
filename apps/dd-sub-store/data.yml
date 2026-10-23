@@ -1,0 +1,22 @@
+additionalProperties:
+  key: dd-sub-store
+  name: dd Sub-Store
+  tags:
+    - Tool
+  description:
+    en: Advanced subscription manager for proxy clients with conversion, filtering and merging
+    zh: 支持订阅转换、筛选、合并与同步的高级代理订阅管理工具
+    zh-Hant: 支援訂閱轉換、篩選、合併與同步的進階代理訂閱管理工具
+    ja: 変換・フィルタリング・統合・同期に対応したプロキシ購読管理ツール
+    ko: 변환, 필터링, 병합 및 동기화를 지원하는 프록시 구독 관리 도구
+    ru: Менеджер прокси-подписок с преобразованием, фильтрацией, объединением и синхронизацией
+    fr: Gestionnaire d'abonnements proxy avec conversion, filtrage, fusion et synchronisation
+    de: Verwaltung von Proxy-Abonnements mit Konvertierung, Filterung, Zusammenführung und Synchronisierung
+    es: Gestor de suscripciones proxy con conversión, filtrado, combinación y sincronización
+    pt-BR: Gerenciador de assinaturas proxy com conversão, filtragem, mesclagem e sincronização
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  website: https://github.com/sub-store-org/Sub-Store
+  github: https://github.com/sub-store-org/Sub-Store
+  document: https://sub-store-org.github.io/doc/guide/installation
