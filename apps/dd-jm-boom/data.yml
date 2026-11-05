@@ -1,0 +1,23 @@
+additionalProperties:
+  key: dd-jm-boom
+  name: dd JM Boom
+  tags:
+    - Media
+    - Tool
+  description:
+    en: Self-hosted third-party JM comic reader with image caching and offline downloads
+    zh: 自托管的 JM 第三方漫画阅读器，支持图片缓存与离线下载
+    zh-Hant: 自架的 JM 第三方漫畫閱讀器，支援圖片快取與離線下載
+    ja: 画像キャッシュとオフラインダウンロードに対応したセルフホスト型 JM 漫画リーダー
+    ko: 이미지 캐시와 오프라인 다운로드를 지원하는 자체 호스팅 JM 만화 리더
+    ru: Самостоятельно размещаемая сторонняя читалка комиксов JM с кешем изображений и офлайн-загрузкой
+    fr: Lecteur de mangas JM tiers auto-hébergé avec cache d'images et téléchargements hors ligne
+    de: Selbst gehosteter JM-Comicreader mit Bildcache und Offline-Downloads
+    es: Lector de cómics JM de terceros autoalojado con caché de imágenes y descargas sin conexión
+    pt-BR: Leitor de quadrinhos JM de terceiros auto-hospedado com cache de imagens e downloads offline
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  website: https://github.com/ppxb/jm-boom
+  github: https://github.com/ppxb/jm-boom
+  document: https://github.com/ppxb/jm-boom#readme

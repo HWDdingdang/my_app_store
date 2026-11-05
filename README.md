@@ -12,6 +12,7 @@ The store currently maintains and features the following application extensions:
 
 * **`dd-dispatcharr`**: Standardized containerized tool for advanced media stack queue dispatching.
 * **`dd-iptv-api`**: High-performance IPTV stream API processing and list optimization service.
+* **`dd-jm-boom`**: Self-hosted JM comic reader with image caching and offline downloads.
 * **`dd-lunatv`**: Dedicated customized web-client deployment engine for LunaTV streaming platform.
 * **`dd-new-api`**: Self-hosted AI gateway for managing model access, API keys, usage and costs.
 * **`dd-sub-store`**: Advanced proxy subscription manager with conversion, filtering, merging and synchronization.
