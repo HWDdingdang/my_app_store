@@ -1,0 +1,26 @@
+networks:
+  1panel-network:
+    external: true
+
+services:
+  jm-boom:
+    image: ghcr.io/ppxb/jm-boom:latest
+    container_name: ${CONTAINER_NAME}
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:3000"
+    environment:
+      RUST_LOG: info,jm_boom_server=info
+      JM_BOOM_ACCESS_PASSWORD: ${JM_BOOM_ACCESS_PASSWORD:?Please set a Web access password}
+      JM_BOOM_CACHE_MAX_MB: "${JM_BOOM_CACHE_MAX_MB:-5120}"
+    volumes:
+      - jm-boom-data:/app/data
+    labels:
+      createdBy: "Apps"
+
+volumes:
+  jm-boom-data:

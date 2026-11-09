@@ -1,0 +1,71 @@
+additionalProperties:
+  formFields:
+    - default: jm-boom
+      edit: true
+      envKey: CONTAINER_NAME
+      label:
+        zh: 容器名称
+        zh-Hant: 容器名稱
+        en: Container Name
+        ja: コンテナ名
+        ko: 컨테이너 이름
+        ru: Имя контейнера
+        fr: Nom du conteneur
+        de: Container-Name
+        es: Nombre del contenedor
+        pt-BR: Nome do contêiner
+      required: true
+      rule: paramCommon
+      type: text
+
+    - default: 3000
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      label:
+        zh: Web 端口
+        zh-Hant: Web 連接埠
+        en: Web Port
+        ja: Web ポート
+        ko: Web 포트
+        ru: Web-порт
+        fr: Port Web
+        de: Web-Port
+        es: Puerto Web
+        pt-BR: Porta Web
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: ""
+      edit: true
+      envKey: JM_BOOM_ACCESS_PASSWORD
+      label:
+        zh: Web 访问密码
+        zh-Hant: Web 存取密碼
+        en: Web Access Password
+        ja: Web アクセスパスワード
+        ko: Web 접속 비밀번호
+        ru: Пароль доступа к Web
+        fr: Mot de passe d'accès Web
+        de: Web-Zugriffspasswort
+        es: Contraseña de acceso Web
+        pt-BR: Senha de acesso Web
+      required: true
+      type: password
+
+    - default: 5120
+      edit: true
+      envKey: JM_BOOM_CACHE_MAX_MB
+      label:
+        zh: 图片缓存容量上限（MB）
+        zh-Hant: 圖片快取容量上限（MB）
+        en: Image Cache Limit (MB)
+        ja: 画像キャッシュ上限（MB）
+        ko: 이미지 캐시 한도 (MB)
+        ru: Лимит кеша изображений (МБ)
+        fr: Limite du cache d'images (Mo)
+        de: Bildcache-Limit (MB)
+        es: Límite de caché de imágenes (MB)
+        pt-BR: Limite do cache de imagens (MB)
+      required: true
+      type: number

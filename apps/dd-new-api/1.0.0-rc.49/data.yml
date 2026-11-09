@@ -1,0 +1,93 @@
+additionalProperties:
+  formFields:
+    - default: new-api
+      edit: true
+      envKey: CONTAINER_NAME
+      label:
+        zh: 容器名称
+        zh-Hant: 容器名稱
+        en: Container Name
+        ja: コンテナ名
+        ko: 컨테이너 이름
+        ru: Имя контейнера
+        fr: Nom du conteneur
+        de: Container-Name
+        es: Nombre del contenedor
+        pt-BR: Nome do contêiner
+      required: true
+      rule: paramCommon
+      type: text
+
+    - default: 3000
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      label:
+        zh: Web 端口
+        zh-Hant: Web 連接埠
+        en: Web Port
+        ja: Web ポート
+        ko: Web 포트
+        ru: Web-порт
+        fr: Port Web
+        de: Web-Port
+        es: Puerto Web
+        pt-BR: Porta Web
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: ""
+      edit: true
+      envKey: SESSION_SECRET
+      label:
+        zh: 会话密钥（填写随机字符串并长期保存）
+        zh-Hant: 工作階段金鑰（填寫隨機字串並長期保存）
+        en: Session Secret (keep a persistent random value)
+        ja: セッションキー（ランダムな値を長期保存）
+        ko: 세션 키 (임의의 값을 유지하세요)
+        ru: Ключ сессии (сохраните случайное значение)
+        fr: Clé de session (conserver une valeur aléatoire)
+        de: Sitzungsschlüssel (zufälligen Wert dauerhaft speichern)
+        es: Clave de sesión (conservar un valor aleatorio)
+        pt-BR: Chave de sessão (manter um valor aleatório)
+      required: true
+      type: password
+
+    - default: "false"
+      edit: true
+      envKey: SESSION_COOKIE_SECURE
+      label:
+        zh: 安全 Cookie（HTTPS 访问时启用）
+        zh-Hant: 安全 Cookie（HTTPS 存取時啟用）
+        en: Secure Cookie (enable for HTTPS)
+        ja: Secure Cookie（HTTPS で有効化）
+        ko: 보안 쿠키 (HTTPS에서 활성화)
+        ru: Secure Cookie (включить для HTTPS)
+        fr: Cookie sécurisé (activer pour HTTPS)
+        de: Sicheres Cookie (für HTTPS aktivieren)
+        es: Cookie segura (activar para HTTPS)
+        pt-BR: Cookie seguro (ativar para HTTPS)
+      required: true
+      type: select
+      values:
+        - label: "false"
+          value: "false"
+        - label: "true"
+          value: "true"
+
+    - default: ""
+      edit: true
+      envKey: SESSION_COOKIE_TRUSTED_URL
+      label:
+        zh: 控制台 HTTPS Origin（启用安全 Cookie 时必填）
+        zh-Hant: 控制台 HTTPS Origin（啟用安全 Cookie 時必填）
+        en: Console HTTPS Origin (required for Secure Cookie)
+        ja: コンソール HTTPS Origin（Secure Cookie 有効時は必須）
+        ko: 콘솔 HTTPS Origin (보안 쿠키 사용 시 필수)
+        ru: HTTPS Origin консоли (обязателен для Secure Cookie)
+        fr: Origine HTTPS de la console (requise pour le cookie sécurisé)
+        de: HTTPS-Origin der Konsole (für sicheres Cookie erforderlich)
+        es: Origin HTTPS de la consola (obligatorio para cookie segura)
+        pt-BR: Origin HTTPS do console (obrigatório para cookie seguro)
+      required: false
+      type: text
