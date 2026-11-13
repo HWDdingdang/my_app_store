@@ -15,6 +15,7 @@ The store currently maintains and features the following application extensions:
 * **`dd-jm-boom`**: Self-hosted JM comic reader with image caching and offline downloads.
 * **`dd-lunatv`**: Dedicated customized web-client deployment engine for LunaTV streaming platform.
 * **`dd-new-api`**: Self-hosted AI gateway for managing model access, API keys, usage and costs.
+* **`dd-open-box`**: Transparent proxy gateway with subscription, routing and DNS management; requires importing the official image and a dedicated LAN IP.
 * **`dd-sub-store`**: Advanced proxy subscription manager with conversion, filtering, merging and synchronization.
 
 ---

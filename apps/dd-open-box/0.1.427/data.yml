@@ -1,0 +1,127 @@
+additionalProperties:
+  formFields:
+    - default: open-box
+      edit: true
+      envKey: CONTAINER_NAME
+      label:
+        zh: 容器名称
+        zh-Hant: 容器名稱
+        en: Container Name
+        ja: コンテナ名
+        ko: 컨테이너 이름
+        ru: Имя контейнера
+        fr: Nom du conteneur
+        de: Container-Name
+        es: Nombre del contenedor
+        pt-BR: Nome do Contêiner
+      required: true
+      rule: paramCommon
+      type: text
+
+    - default: 3036
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      label:
+        zh: 面板端口（通过容器局域网 IP 访问）
+        zh-Hant: 面板連接埠（透過容器區域網路 IP 存取）
+        en: Panel Port (access via container LAN IP)
+        ja: パネルポート（コンテナの LAN IP でアクセス）
+        ko: 패널 포트 (컨테이너 LAN IP로 접속)
+        ru: Порт панели (доступ по LAN IP контейнера)
+        fr: Port du panneau (via l'IP LAN du conteneur)
+        de: Panel-Port (Zugriff über die LAN-IP des Containers)
+        es: Puerto del panel (acceso por IP LAN del contenedor)
+        pt-BR: Porta do painel (acesso pelo IP LAN do contêiner)
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: macvlan
+      edit: true
+      envKey: OPENBOX_NETWORK_DRIVER
+      label:
+        zh: 网络驱动（虚拟机可选 ipvlan）
+        zh-Hant: 網路驅動（虛擬機可選 ipvlan）
+        en: Network Driver (ipvlan for restricted VMs)
+        ja: ネットワークドライバー（制限のある VM は ipvlan）
+        ko: 네트워크 드라이버 (제한된 VM은 ipvlan)
+        ru: Сетевой драйвер (ipvlan для ограниченных ВМ)
+        fr: Pilote réseau (ipvlan pour les VM restreintes)
+        de: Netzwerktreiber (ipvlan für eingeschränkte VMs)
+        es: Controlador de red (ipvlan para VM restringidas)
+        pt-BR: Driver de rede (ipvlan para VMs restritas)
+      required: true
+      type: select
+      values:
+        - label: macvlan
+          value: macvlan
+        - label: ipvlan
+          value: ipvlan
+
+    - default: eth0
+      edit: true
+      envKey: OPENBOX_LAN_INTERFACE
+      label:
+        zh: 宿主机局域网网卡（按实际填写，如 eth0 / enp3s0）
+        zh-Hant: 主機區域網路網卡（依實際填寫，如 eth0 / enp3s0）
+        en: Host LAN Interface (e.g. eth0 / enp3s0)
+        ja: ホストの LAN インターフェース（例 eth0 / enp3s0）
+        ko: 호스트 LAN 인터페이스 (예 eth0 / enp3s0)
+        ru: LAN-интерфейс хоста (например eth0 / enp3s0)
+        fr: Interface LAN de l'hôte (ex. eth0 / enp3s0)
+        de: LAN-Schnittstelle des Hosts (z. B. eth0 / enp3s0)
+        es: Interfaz LAN del host (p. ej. eth0 / enp3s0)
+        pt-BR: Interface LAN do host (ex. eth0 / enp3s0)
+      required: true
+      type: text
+
+    - default: 192.168.1.0/24
+      edit: true
+      envKey: OPENBOX_LAN_SUBNET
+      label:
+        zh: 局域网网段（CIDR，按实际填写）
+        zh-Hant: 區域網路網段（CIDR，依實際填寫）
+        en: LAN Subnet (CIDR, use your actual network)
+        ja: LAN サブネット（実際のネットワークの CIDR）
+        ko: LAN 서브넷 (실제 네트워크의 CIDR)
+        ru: Подсеть LAN (CIDR вашей сети)
+        fr: Sous-réseau LAN (CIDR de votre réseau)
+        de: LAN-Subnetz (CIDR des eigenen Netzwerks)
+        es: Subred LAN (CIDR de su red)
+        pt-BR: Sub-rede LAN (CIDR da sua rede)
+      required: true
+      type: text
+
+    - default: 192.168.1.1
+      edit: true
+      envKey: OPENBOX_LAN_GATEWAY
+      label:
+        zh: 主路由 IPv4 地址（按实际填写）
+        zh-Hant: 主路由 IPv4 位址（依實際填寫）
+        en: Main Router IPv4 Address
+        ja: メインルーターの IPv4 アドレス
+        ko: 주 라우터 IPv4 주소
+        ru: IPv4-адрес основного маршрутизатора
+        fr: Adresse IPv4 du routeur principal
+        de: IPv4-Adresse des Hauptrouters
+        es: Dirección IPv4 del router principal
+        pt-BR: Endereço IPv4 do roteador principal
+      required: true
+      type: text
+
+    - default: ""
+      edit: true
+      envKey: OPENBOX_LAN_IP
+      label:
+        zh: 容器独立 IPv4（未占用、DHCP 池外，不能与宿主或网关相同）
+        zh-Hant: 容器獨立 IPv4（未使用、DHCP 池外，不可與主機或閘道相同）
+        en: Container IPv4 (unused, outside DHCP pool, different from host and gateway)
+        ja: コンテナ IPv4（未使用・DHCP 範囲外・ホストとゲートウェイ以外）
+        ko: 컨테이너 IPv4 (미사용, DHCP 풀 외부, 호스트 및 게이트웨이와 다름)
+        ru: IPv4 контейнера (свободный, вне DHCP, не адрес хоста или шлюза)
+        fr: IPv4 du conteneur (libre, hors DHCP, distincte de l'hôte et de la passerelle)
+        de: Container-IPv4 (frei, außerhalb DHCP, verschieden von Host und Gateway)
+        es: IPv4 del contenedor (libre, fuera de DHCP, distinta del host y la puerta de enlace)
+        pt-BR: IPv4 do contêiner (livre, fora do DHCP, diferente do host e gateway)
+      required: true
+      type: text

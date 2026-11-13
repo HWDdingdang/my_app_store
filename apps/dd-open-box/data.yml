@@ -1,0 +1,22 @@
+additionalProperties:
+  key: dd-open-box
+  name: dd Open-Box
+  tags:
+    - Tool
+  description:
+    en: Integrated transparent proxy gateway with subscription, routing and DNS management
+    zh: 集成订阅、分流与 DNS 管理的一体化透明代理旁路由
+    zh-Hant: 整合訂閱、分流與 DNS 管理的一體化透明代理旁路由
+    ja: サブスクリプション・ルーティング・DNS を管理する透過プロキシゲートウェイ
+    ko: 구독, 라우팅 및 DNS 관리를 통합한 투명 프록시 게이트웨이
+    ru: Прозрачный прокси-шлюз с управлением подписками, маршрутизацией и DNS
+    fr: Passerelle proxy transparente avec gestion des abonnements, du routage et du DNS
+    de: Transparenter Proxy-Gateway mit Abonnement-, Routing- und DNS-Verwaltung
+    es: Puerta de enlace proxy transparente con gestión de suscripciones, rutas y DNS
+    pt-BR: Gateway proxy transparente com gerenciamento de assinaturas, roteamento e DNS
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  website: https://github.com/liandu2024/Open-Box
+  github: https://github.com/liandu2024/Open-Box
+  document: https://github.com/liandu2024/Open-Box/blob/main/docker/README.md

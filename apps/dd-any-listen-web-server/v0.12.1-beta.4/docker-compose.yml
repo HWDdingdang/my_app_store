@@ -4,7 +4,7 @@ networks:
 
 services:
   any-listen:
-    image: lyswhut/any-listen-web-server:latest
+    image: lyswhut/any-listen-web-server:v0.12.1-beta.4
     container_name: ${CONTAINER_NAME}
     user: "0:0"
     restart: unless-stopped
